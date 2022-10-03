@@ -5,6 +5,7 @@ body{
     padding: 0;
     background: #ffffff;
     font-size: 100%;
+    overflow-x:hidden;
 }
 
 .circle{
@@ -16,7 +17,7 @@ body{
     height: 5px;
     border-radius: 50%;
     border: 1px solid #e7d532;
-    animation: wave 0.8s forwards;
+    animation:  0.8s forwards;
     opacity: 1;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px #686FFD;
 
@@ -93,10 +94,11 @@ body{
             align-items: center;
        }
         .container-general {
-            padding: 3.90625vw;
+            padding: 1.90625vw;
             margin: 0 auto;
             width: 52.083333333333336vw;
-            padding-bottom: 100px;
+            padding-bottom: 90px;
+            padding-top: 40px;
        }
         .container-general .gallery-wrap {
             display: flex;
@@ -167,8 +169,8 @@ body{
         margin: 0 auto;
         width: 52.083333333333336vw;
         height: 5vw;
-        padding-bottom: 5px;
-        padding-top: 20px
+        padding-bottom: 30px;
+        padding-top: 0.7px
    }
     .logo-general .gallery-wrap {
         display: flex;
@@ -236,19 +238,20 @@ body{
 
 h1 {
     font-family: 'League Spartan', sans-serif;
-    font-size: 1.3em;
+    font-size: 1.1em;
     padding: auto;
-    padding-bottom: 10vw;
+    padding-bottom: 15vw;
     padding-left: 10vw;
     padding-right:10vw;
     margin: auto;
-    margin-bottom: 10vw ;
+    margin-bottom: 1vw ;
     max-width: 40ch;
     color: #201F1F;
     text-align: center;
-    transform: scale(0.94);
+    transform: scale(1.2);
     animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
     animation-direction: alternate;
+    animation-iteration-count: infinite;
     
   }
   @keyframes scale {
@@ -371,14 +374,14 @@ h1 {
 
 .menu
 {
-  position:absolute;
+  position:relative;
   left:0px;
   top:-60px;
   
   width:100vw;
   padding:2vw;
-  padding-top:16px;
-  padding-bottom: 60px;
+  padding-top:18px;
+  padding-bottom: 70px;
   font-family: 'League Spartan', sans-serif;
   
   background-color: rgba(0, 0, 0, 0.9);
@@ -403,13 +406,13 @@ h1 {
 
 .menu span
 {
-  padding-bottom: vw; 
+  padding-bottom: 1vw; 
   padding-top: 1vw;
 }
 
 .menu span a:hover
 {
-  color:rgba(255,255,255,0.5);  
+  color:rgba(0, 0, 0, 0.5);  
 }
 .about{
   float: right;
@@ -429,4 +432,11 @@ h1 {
   color: white;
   border-color: black;
   font-size: 1.5vw;
+}
+.heading1{
+  font-size:1em;
+}
+.uarr{
+  position: absolute;
+  bottom: 0px;
 }
