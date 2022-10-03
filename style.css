@@ -1,0 +1,432 @@
+body{
+    width: 100vw;  
+    height: 100vw;
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+    font-size: 100%;
+}
+
+.circle{
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    border: 1px solid #e7d532;
+    animation: wave 0.8s forwards;
+    opacity: 1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px #686FFD;
+
+}
+
+@keyframes wave{
+    
+    0%{
+        width: 5px;
+        height: 5px;
+        opacity: 1;
+    }
+    90%{
+        width: 50px;
+        height: 50px;
+        opacity: 0.5;
+    }
+    100%{
+        width: 50px;
+        height: 50px;
+        opacity: 0;
+    }
+
+}
+
+#top, #bottom, #left, #right {
+	background: #201F1F;
+	position: fixed;
+	}
+	#left, #right {
+		top: 0; bottom: 0;
+		width: 15px;
+		}
+		#left { left: 0; }
+		#right { right: 0; }
+		
+	#top, #bottom {
+		left: 0; right: 0;
+		height: 15px;
+		}
+		#top { top: 0;}
+		#bottom { bottom: 0; }
+
+        
+
+
+
+
+
+
+        @import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
+        /* image-slide */
+
+        html, body {
+            position: relative;
+            width: 100%;
+            height: 100%;
+       }
+        .swiper-container {
+            margin: 0vw;
+            width: 100%;
+            height: 90%;
+            
+       }
+        .swiper-slide {
+            text-align: center;
+            background: #DEB887;
+
+           /* Center slide text vertically */
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+       }
+        .container-general {
+            padding: 3.90625vw;
+            margin: 0 auto;
+            width: 52.083333333333336vw;
+            padding-bottom: 100px;
+       }
+        .container-general .gallery-wrap {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 50vh;
+            border: solid 5px #201F1F;
+            border-radius: 10px;
+       }
+        .container-general .gallery-wrap .item {
+            flex: 1;
+            height: 100%;
+            background-position: center;
+            background-size: cover;
+            background-repeat: none;
+            transition: all 0.8s ease;
+       }
+        .container-general .gallery-wrap .item:hover {
+            flex: 8;
+       }
+        .wrap-effect-1 .item:first-of-type {
+            background-image: url(./gyimages/1.JPG);
+       }
+        .wrap-effect-1 .item:nth-of-type(2) {
+            background-image: url(./gyimages/2.jpg);
+       }
+        .wrap-effect-1 .item:nth-of-type(3) {
+            background-image: url('https://cdn.dribbble.com/users/1785433/screenshots/10898782/media/7abdd19269231d7c1ae59149dd74c4ce.gif');
+       }
+        .wrap-effect-1 .item:nth-of-type(4) {
+            background-image: url(./gyimages/3.jpg);
+       }
+        .wrap-effect-1 .item:last-of-type {
+            background-image: url(./gyimages/4.jpg);
+       }
+        .wrap-effect-2 .item:hover {
+            transform: translate3d(0, 0, 100px);
+            box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+            filter: saturate(2) contrast(120%);
+       }
+       /* image-slide-end */
+
+       /* logo-slide */
+
+       html, body {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        
+   }
+     .logo-container {
+        margin:0vw;
+        
+   }
+    .swiper-slide {
+        text-align: center;
+        background: #ffffff;
+        
+
+       /* Center slide text vertically */
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+   }
+    .logo-general {
+        padding: 73px 0;
+        margin: 0 auto;
+        width: 52.083333333333336vw;
+        height: 5vw;
+        padding-bottom: 5px;
+        padding-top: 20px
+   }
+    .logo-general .gallery-wrap {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 10vw;
+        
+   }
+    .logo-general .gallery-wrap .logo {
+        flex: 1;
+        height: 100%;
+        background-position: center;
+        background-size: 2vw;
+        background-repeat: no-repeat;
+        transition: all 2s ease;
+        
+   }
+    .logo-general .gallery-wrap .logo:hover {
+        flex: 7;
+        
+  
+   }
+
+   .wrap-effect-1 .logo:nth-of-type(1) {
+    background-image: url(./reactive/dot.png);
+   }
+    .wrap-effect-1 .logo:nth-of-type(2) {
+        background-image: url(./reactive/g.png);
+   }
+    .wrap-effect-1 .logo:nth-of-type(3) {
+        background-image: url(./reactive/y.png);
+   }
+    .wrap-effect-1 .logo:nth-of-type(4) {
+        background-image: url(./reactive/m.png);
+   }
+   .wrap-effect-1 .logo:nth-of-type(5) {
+    background-image: url(./reactive/n.png);
+   }
+   .wrap-effect-1 .logo:nth-of-type(6) {
+    background-image: url(./reactive/a.png);
+   }
+    .wrap-effect-1 .logo:nth-of-type(7) {
+        background-image: url(./reactive/s.png);
+   }
+   .wrap-effect-1 .logo:nth-of-type(8) {
+    background-image: url(./reactive/i.png);
+   }
+   .wrap-effect-1 .logo:nth-of-type(9) {
+    background-image: url(./reactive/u.png);
+}
+.wrap-effect-1 .logo:nth-of-type(10) {
+    background-image: url(./reactive/m.png);
+}
+.wrap-effect-1 .logo:nth-of-type(11) {
+    background-image: url(./reactive/dot2.png);
+}
+
+    .wrap-effect-2 .logo:hover {
+        transform: translate3d(0, 0, 100px);
+        box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+        filter: saturate(2) contrast(120%);
+   }
+
+       /* logo-slide-end */ 
+
+h1 {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 1.3em;
+    padding: auto;
+    padding-bottom: 10vw;
+    padding-left: 10vw;
+    padding-right:10vw;
+    margin: auto;
+    margin-bottom: 10vw ;
+    max-width: 40ch;
+    color: #201F1F;
+    text-align: center;
+    transform: scale(0.94);
+    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+    animation-direction: alternate;
+    
+  }
+  @keyframes scale {
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  span {
+    display: inline-block;
+    opacity: 0;
+    filter: blur(4px);
+  }
+  
+  span:nth-child(1) {
+    animation: fade-in 2s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(2) {
+    animation: fade-in 2s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(3) {
+    animation: fade-in 2s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(4) {
+    animation: fade-in 2s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(5) {
+    animation: fade-in 2s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(6) {
+    animation: fade-in 2s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(7) {
+    animation: fade-in 2s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(8) {
+    animation: fade-in 2s 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(9) {
+    animation: fade-in 2s 0.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(10) {
+    animation: fade-in 2s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(11) {
+    animation: fade-in 2s 1.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(12) {
+    animation: fade-in 2s 1.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(13) {
+    animation: fade-in 2s 1.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(14) {
+    animation: fade-in 2s 1.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(15) {
+    animation: fade-in 2s 1.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(16) {
+    animation: fade-in 2s 1.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(17) {
+    animation: fade-in 2s 1.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  span:nth-child(18) {
+    animation: fade-in 2s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  }
+  
+  @keyframes fade-in {
+    100% {
+      opacity: 1;
+      filter: blur(0);
+    }
+  }
+  #order
+{
+  color:#ffffff;
+  font-size: 10px;
+  padding-top: 20px;
+  padding: 50px 5px;
+  background-color:white;
+  
+  border-radius:150px;
+  border-style:solid;
+  border-width:1px;
+  border-color:#ffffff;
+  
+  position:relative;
+  
+  top:50px;
+  left:50vw;
+  
+  margin-left:-70px;
+  
+  display:inline-block;
+  -webkit-transform:rotate3d(0,0,1,30deg);
+  transform:rotate3d(0,0,1,30deg);
+  
+}
+
+/* MENU */
+
+.menu
+{
+  position:absolute;
+  left:0px;
+  top:-60px;
+  
+  width:100vw;
+  padding:2vw;
+  padding-top:16px;
+  padding-bottom: 60px;
+  font-family: 'League Spartan', sans-serif;
+  
+  background-color: rgba(0, 0, 0, 0.9);
+  box-shadow: 0px 4px 5px rgba(0,0,0,0.6);
+  font-size:20px;
+  color:white;
+  
+  /* transition */
+  
+  transition:top 1s;
+  -webkit-transition:top 1s;
+  
+}
+
+.menu:hover
+{
+  top:0px;  
+}
+
+
+/* SPAN OF SPAN */
+
+.menu span
+{
+  padding-bottom: vw; 
+  padding-top: 1vw;
+}
+
+.menu span a:hover
+{
+  color:rgba(255,255,255,0.5);  
+}
+.about{
+  float: right;
+  position: relative;
+  display: flex;
+  padding-right: 12vw;
+  border-radius: 30px;
+  background-color: black;
+  color: white;
+  border-color: black;
+  font-size: 1.5vw
+}
+.contact{
+  float: right;
+  border-radius: 30px;
+  background-color: black;
+  color: white;
+  border-color: black;
+  font-size: 1.5vw;
+}
