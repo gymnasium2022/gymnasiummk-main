@@ -43,30 +43,6 @@ body{
 
 }
 
-#top, #bottom, #left, #right {
-	background: #201F1F;
-	position: fixed;
-	}
-	#left, #right {
-		top: 0; bottom: 0;
-		width: 15px;
-		}
-		#left { left: 0; }
-		#right { right: 0; }
-		
-	#top, #bottom {
-		left: 0; right: 0;
-		height: 15px;
-		}
-		#top { top: 0;}
-		#bottom { bottom: 0; }
-
-        
-
-
-
-
-
 
         @import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
 
@@ -97,7 +73,7 @@ body{
             padding: 1.90625vw;
             margin: 0 auto;
             width: 52.083333333333336vw;
-            padding-bottom: 90px;
+            padding-bottom: 50px;
             padding-top: 40px;
        }
         .container-general .gallery-wrap {
@@ -107,6 +83,7 @@ body{
             height: 50vh;
             border: solid 5px #201F1F;
             border-radius: 10px;
+            box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.6);
        }
         .container-general .gallery-wrap .item {
             flex: 1;
@@ -176,8 +153,7 @@ body{
         display: flex;
         flex-direction: row;
         width: 100%;
-        height: 10vw;
-        
+        height: 10vw;       
    }
     .logo-general .gallery-wrap .logo {
         flex: 1;
@@ -248,7 +224,7 @@ h1 {
     max-width: 40ch;
     color: #201F1F;
     text-align: center;
-    transform: scale(1.2);
+    transform: scale(0.9);
     animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
     animation-direction: alternate;
     animation-iteration-count: infinite;
@@ -420,23 +396,39 @@ h1 {
   display: flex;
   padding-right: 12vw;
   border-radius: 30px;
-  background-color: black;
-  color: white;
-  border-color: black;
-  font-size: 1.5vw
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border-color: rgb(0, 0, 0);
+  font-size: 1.5vw;
+  box-shadow: 0px 2px 2px rgba(255, 255, 255, 0.6);
 }
 .contact{
   float: right;
   border-radius: 30px;
-  background-color: black;
-  color: white;
-  border-color: black;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border-color: rgb(0, 0, 0);
   font-size: 1.5vw;
+  box-shadow: 0px 2px 2px rgba(255, 255, 255, 0.6);
 }
 .heading1{
   font-size:1em;
 }
 .uarr{
   position: absolute;
+  bottom: -1.28vw;
+  
+  -webkit-transform: rotate(90deg);
+  font-size: 35px;
+  
+}
+.here1{
+  font-size: 0.5em;
+  -webkit-transform: rotate(-90deg);
+  position: absolute;
   bottom: 0px;
+  left: 10px;
+  padding-left: 0.1vw;
+  padding-top: 30px;
+  color: rgb(17, 17, 17);
 }
